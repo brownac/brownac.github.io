@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Pier Sans';
+    src: url("../font/pier-regular.otf");
+}
+
+
+html, body {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: 'Pier Sans';
+}
+
+.top {
+  height: 700px;
+  width: 100%;
+  background-image: url("../img/austin.jpeg");
+  opacity: .8;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+  top:30%;
+}
+
+.arrows path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 3px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.navbar-default {
+  background: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.nav.navbar-nav.navbar-right {
+  margin-right: 25px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+.top-nav-collapse {
+  background-color: black;
+  border-color: white;
+}
+
+#about {
+  background: black;
+  color: white;
+}
+
+.page-text {
+  text-align: center;
+  margin-top: 65px;
+}
+
+#about .lists li {
+  list-style: none;
+  text-align: center;
+  font-style: italic;
+}
+
+.experience {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#projects {
+    height: 500px;
+    width: 100%;
+    background-image: url("../img/bird.png");
+    opacity: .8;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button-row {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.button {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em 2em 1em 2em;
+  border: 2px solid #fff;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #5cce46;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button:visited {
+  text-decoration: none;
+}
+
+.button:active {
+  text-decoration: none;
+}
+
+.button-contact {
+  text-decoration: none;
+  color: inherit;
+  padding: 2em 3em 2em 3em;
+  border: 2px solid #000;
+}
+
+.button-contact:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #5cce46;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button-contact:visited {
+  text-decoration: none;
+}
+
+.button-contact:active {
+  text-decoration: none;
+}
+
+.logos {
+  margin-right: 20px;
+}
