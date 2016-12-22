@@ -17,8 +17,10 @@ $(function() {
   $(window).scroll(function() {
     if ($(".navbar").offset().top > 700) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".navbar-brand").removeClass("hide").fadeIn(1000);
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".navbar-brand").addClass("hide").fadeOut(1000);
     }
   });
 
