@@ -104,6 +104,10 @@ html, body {
   color: #929293;
 }
 
+#photography a:hover {
+  text-decoration: none;
+}
+
 .page-text {
   text-align: center;
   margin-top: 65px;
@@ -189,6 +193,12 @@ html, body {
 .logos {
   margin-right: 20px;
 }
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
 
 @media screen and (max-width:770px) {
     .col-md-4 {
