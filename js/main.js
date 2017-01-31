@@ -19,9 +19,11 @@ $(function() {
     if ($(".navbar").offset().top > 700) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".navbar-brand").removeClass("hide").fadeIn(1000);
-    } else {
+        $(".nav.navbar-nav.navbar-right").removeClass("hide").fadeIn(1000);
+    } else if($(".navbar").offset().top == 0) {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $(".navbar-brand").addClass("hide").fadeOut(1000);
+        $(".nav.navbar-nav.navbar-right").addClass("hide").fadeIn(1000);
     }
   });
 

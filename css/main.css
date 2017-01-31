@@ -104,10 +104,6 @@ html, body {
   color: #929293;
 }
 
-#photography a:hover {
-  text-decoration: none;
-}
-
 .page-text {
   text-align: center;
   margin-top: 65px;
@@ -138,6 +134,16 @@ html, body {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  vertical-align: middle;
+}
+
+.medium {
+  width: 40px;
+}
+
+.glyphicon-envelope {
+  font-size: 20px;
+  vertical-align: center;
 }
 
 .button {
@@ -166,9 +172,11 @@ html, body {
 }
 
 .button-contact {
+  height: 300px;
+  width: 600px;
+  padding: 2em 3em 2em 3em;
   text-decoration: none;
   color: inherit;
-  padding: 2em 3em 2em 3em;
   border: 2px solid #000;
 }
 
@@ -191,7 +199,11 @@ html, body {
 }
 
 .logos {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.myCarousel {
+  margin-top: 200px;
 }
 
 .carousel-inner > .item > img,
