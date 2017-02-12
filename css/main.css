@@ -10,10 +10,18 @@ html, body {
   font-family: 'Pier Sans';
 }
 
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
 .top {
   height: 700px;
   width: 100%;
-  background-image: url("../img/aust.jpg");
+  background-image: url("../img/birds.jpg");
   opacity: .8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,6 +107,19 @@ html, body {
   color: white;
 }
 
+#work-images {
+  height: 180px; width: 255px;
+}
+
+#work-images:hover {
+  -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+  }
+
 #about a:hover {
   text-decoration: none;
   color: #929293;
@@ -121,7 +142,7 @@ html, body {
 }
 
 #projects {
-    height: 500px;
+    height: 575px;
     width: 100%;
     background-image: url("../img/bird.png");
     opacity: .8;
