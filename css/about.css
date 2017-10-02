@@ -25,3 +25,8 @@ body, html {
 	border-radius: 20px 50px 20px;
 }
 
+.book-image {
+  padding: 30px;
+  max-width: 125px;
+  max-height: 175px;
+}
