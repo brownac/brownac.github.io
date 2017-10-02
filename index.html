@@ -1,114 +1,152 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <title>about me</title>
-  <link rel="stylesheet" href="css/about.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
-  <link rel="icon" type="image/png" href="http://i.imgur.com/56t2kHj.png" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" media="screen,projection">
+  <link href="css/about.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"/>
+  <title>austin | about</title>
+
 </head>
+
 <body>
-
-  <div class="fixed-action-btn toolbar">
-    <a class="btn-floating btn-large amber darken-2">
-      <i class="large material-icons">menu</i>
-    </a>
-    <ul>
-      <li class="waves-effect waves-light"><a href="/projects">Projects</a></li>
-      <li class="waves-effect waves-light"><a href="https://blog.austincbrown.com/" target="_blank">Blog</a></li>
-    </ul>
-  </div>
-
   <div class="container">
-    <div class="row intro">
-      <h3 class="intro-text">Hi there! I'm <span id="desc"></span></h3>
-      <img src="img/cam.png" class="hidden" id="cam" />
-    </div>
-    <div class="row accordion-row">
-      <ul class="collapsible popout hidden" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">fingerprint</i>Who am I?</div>
-          <div class="collapsible-body"><span>A cool guy that loves material design, cats, photography, hip-hop, and much, much more.</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">code</i>What am I?</div>
-          <div class="collapsible-body">
-            <p>Recently, a proud graduate of the University of Florida.</p>
-          <p>Currently, a Software Engineer at American Express in New York City.</p>   
+    <div class="section">
+      <div class="row">
+        <div class="col s12">
+          <div class="fixed-action-btn toolbar">
+            <a class="btn-floating btn-large amber darken-2">
+              <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+              <li class="waves-effect waves-light">
+                <a class="white-text" href="https://github.com/brownac" target="_blank"><i class="fa fa-github small"></i></a>
+              </li>
+              <li class="waves-effect waves-light">
+                <a class="white-text" href="mailto:me@austincbrown.com"><i class="fa fa-envelope small"></i></a>
+              </li>
+              <li class="waves-effect waves-light">
+                <a class="white-text" href="https://twitter.com/saucetin_" target="_blank"><i class="fa fa-twitter small"></i></a>
+              </li>
+              <li class="waves-effect waves-light">
+                <a class="white-text" href="https://www.linkedin.com/in/austin-brown-8a2b62b4/" target="_blank"><i class="fa fa-linkedin-square small"></i></a>
+              </li>
+
+            </ul>
           </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">work</i>What have I worked on?</div>
-          <div class="collapsible-body">
-            <span>Right now, I'm a Java developer. But I've done other stuff in the past:</span>
-           <div class="row">
-            <div class="col s4">
-              <div class="cardpanel card-1">
-                <div class="container">
-                    <p class="white-text">
-                      My first coding experience was writing basic HTML and CSS, as well as debugging the beta version of a web application. Ironically, the company that I did this work for would soon be sued into non-existence.
-                    </p>
-                </div>
-                </div>
+
+          <div class="row intro">
+            <h3 class="intro-text">Hi there! I'm <span id="desc"></span></h3>
+            <img src="img/cam.png" class="hidden" id="cam" />
+          </div>
+          <div class="row random-stuff hidden">
+            <div class="col s6">
+              <h5>My discover weekly</h5>
+              <iframe src="https://open.spotify.com/embed?uri=spotify:user:spotify:playlist:37i9dQZEVXcQBnlrbVHN4f" width="300" height="100" frameborder="0" allowtransparency="true"></iframe>
             </div>
-            <div class="col s4">
-              <div class="cardpanel card-1">
-                <div class="container">
-                    <p class="white-text">
-                      But, I really got my hands dirty a year later. I worked at a start-up with two full-time employees, writing server-side PHP as well as some AngularJS. This is where I fell in love with web development. 
-                    </p>
-                </div>
-                </div>
+            <div class="col s6">
+              <h5>What I'm reading</h5>
+              <div class="col s3">
+                <a href="http://malcolmx.com/">
+                  <img src="http://prodimage.images-bn.com/pimages/9780345350688_p0_v3_s1200x630.jpg" width="100" height="150">
+                </a>
+              </div>
+              <div class="col s3">
+                <a href="https://www.amazon.com/dp/B0026772N8/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/41vxAMcHOzL._SX307_BO1,204,203,200_.jpg" width="100" height="150">
+                </a>
+              </div>
             </div>
-            <div class="col s4">
-              <div class="cardpanel card-1">
-                <div class="container">
-                    <p class="white-text">
-                      In the summer of 2016, I had my first corporate development experience at my current employer, American Express. I wrote code for monitoring server log files that (surprisingly) made it to production by the end of the summer.
-                    </p>
+          </div>
+          <div class="row accordion-row">
+            <ul class="collapsible popout hidden" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">fingerprint</i>Who am I?</div>
+                <div class="collapsible-body"><span>A cool guy that loves material design, cats, photography, hip-hop, and much, much more.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">code</i>What am I?</div>
+                <div class="collapsible-body">
+                  <p>Recently, a proud graduate of the University of Florida.</p>
+                  <p>Currently, a Software Engineer at American Express in New York City.</p>   
                 </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">work</i>What have I worked on?</div>
+                <div class="collapsible-body">
+                  <span>Right now, I'm a Java developer. But I've done other stuff in the past:</span>
+                  <div class="row">
+                    <div class="col s4">
+                      <div class="card-panel hoverable blue">
+                        <div class="container">
+                          <h5 class="white-text">Grooveshark | Fall 2014</h5>
+                          <p class="white-text">
+                            My first coding experience was writing basic HTML and CSS, as well as debugging the beta version of a web application. Ironically, the company that I did this work for would soon be sued into non-existence.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s4">
+                      <div class="card-panel hoverable blue">
+                        <div class="container">
+                          <h5 class="white-text">MaidSuite | Fall 2015</h5>
+                          <p class="white-text">
+                            But, I really got my hands dirty a year later. I worked at a start-up with two full-time employees, writing server-side PHP as well as some AngularJS. This is where I fell in love with web development. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s4">
+                      <div class="card-panel hoverable blue">
+                        <div class="container">
+                          <h5 class="white-text">American Express | Summer 2016</h5>
+                          <p class="white-text">
+                            In the summer of 2016, I had my first corporate development experience at my current employer, American Express. I wrote code for monitoring server log files that (surprisingly) made it to production by the end of the summer.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-           </div>
+              </li>
+              <li>
+                <div class="collapsible-header interests"><i class="material-icons">laptop_mac</i>What are my tech-related interests?</div>
+                <div class="collapsible-body"><span>Well, for starters, I love Java! I currently do micro-services API development on a day-to-day basis and love it. I do, however, have a range of interests:</span>
+                  <div class="chips chips-initial"></div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header interests"><i class="material-icons">battery_charging_full</i>What do I do when I'm not at work?</div>
+                <div class="collapsible-body">
+                  <p>When I'm not at work, I try to unplug as much as I can. I love riding my bike (I'm a die-hard fixie rider), cooking, and taking semi-decent pictures (which you can find on my <a href="https://www.instagram.com/saucetin_/" target="_blank">Instagram</a>).</p>
+                  <p>That said, though, I can't always turn away from tech. After all, I did build this website! <span><i class="material-icons">tag_faces</i></span></p>
+                  <p>I love working on side projects, exploring my tech interests further, and learning something new every day.</p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header interests"><i class="material-icons">edit</i>How can you get in contact with me?</div>
+                <div class="collapsible-body">
+                  <p>I'm on <a href="https://www.linkedin.com/in/austin-brown-8a2b62b4/" target="_blank">Linkedin</a>, <a href="https://www.facebook.com/austin.brown.965" target="_blank">Facebook</a>, etc.</p>
+                  <p>You can also email me <a href="mailto:me@austincbrown.com">here</a>.</p>
+                  <p>Drop me a line! Let's talk about what you're working on.</p>
+                </div>
+              </li>
+            </ul>
           </div>
-        </li>
-        <li>
-          <div class="collapsible-header interests"><i class="material-icons">laptop_mac</i>What are my tech-related interests?</div>
-          <div class="collapsible-body"><span>Well, for starters, I love Java! I currently do micro-services API development on a day-to-day basis and love it. I do, however, have a range of interests:</span>
-            <div class="chips chips-initial"></div>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header interests"><i class="material-icons">battery_charging_full</i>What do I do when I'm not at work?</div>
-          <div class="collapsible-body">
-            <p>When I'm not at work, I try to unplug as much as I can. I love riding my bike (I'm a die-hard fixie rider), cooking, and taking semi-decent pictures (which you can find on my <a href="https://www.instagram.com/saucetin_/" target="_blank">Instagram</a>).</p>
-            <p>That said, though, I can't always turn away from tech. After all, I did build this website! <span><i class="material-icons">tag_faces</i></span></p>
-            <p>I love working on side projects, exploring my tech interests further, and learning something new every day.</p>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header interests"><i class="material-icons">edit</i>How can you get in contact with me?</div>
-          <div class="collapsible-body">
-            <p>I'm on <a href="https://www.linkedin.com/in/austin-brown-8a2b62b4/" target="_blank">Linkedin</a>, <a href="https://www.facebook.com/austin.brown.965" target="_blank">Facebook</a>, etc.</p>
-            <p>You can also email me <a href="mailto:me@austincbrown.com">here</a>.</p>
-            <p>Drop me a line! Let's talk about what you're working on.</p>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 
+  <!--Import jQuery before materialize.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" charset="utf-8"></script>
+  <script src="js/about.js"></script>
 
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" charset="utf-8"></script>
-<script src="js/about.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@ $( document ).ready(function() {
 	setTimeout(function() {
 		$("#cam").fadeIn(3000).removeClass("hidden");
 		$(".popout").fadeIn(5000).removeClass("hidden");
+		$(".random-stuff").fadeIn(7000).removeClass("hidden");
 	}, 1000);
 	$('.chips-initial').material_chip({
 	    data: [{
