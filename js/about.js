@@ -35,7 +35,7 @@ $( document ).ready(function() {
 });
 
 $("#desc").typeIt({
-	strings: ["a developer","a cat person","a self-proclaimed chef","also a self-proclaimed photographer","an outdoors enthusiast","Austin."],
+	strings: ["a developer","a cat person","a self-proclaimed chef","a photographer","an outdoors enthusiast","a traveler","a New Yorker","Austin."],
 	speed: 100,
 	breakLines: false,
 	lifeLike: true,
