@@ -12,20 +12,22 @@ $( document ).ready(function() {
 	    }, {
 	      tag: 'Big data analytics',
 	    }, {
-	    	tag: 'Systems administration'
+	    	tag: 'Systems architecture',
 	    }, {
-	    	tag: 'Systems architecture'
-	    }],
+			tag: 'Dev-Ops',
+		}],
 	    autocompleteOptions: {
 	    	data: {
-	    		'HTML': null, 
-	    		'CSS': null, 
+	    		'HTML': null,
+	    		'CSS': null,
 	    		'Javascript': null,
 	    		'Java': null,
 	    		'PHP': null,
 	    		'React': null,
 	    		'Meteor': null,
-	    		'React Native': null,
+				'React Native': null,
+				'Elixir': null,
+				'Ruby on Rails': null
 	    	},
 	    	limit: Infinity,
 	    	minLength: 1,
@@ -35,8 +37,8 @@ $( document ).ready(function() {
 });
 
 $("#desc").typeIt({
-	strings: ["a developer","a cat person","a self-proclaimed chef","a photographer","an outdoors enthusiast","a traveler","a New Yorker","Austin."],
-	speed: 100,
+	strings: ["Austin."],
+	speed: 50,
 	breakLines: false,
 	lifeLike: true,
 });
